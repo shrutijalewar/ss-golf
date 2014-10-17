@@ -7,13 +7,14 @@
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="cordova.js"></script>
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body ng-app="nss-ball" ng-controller="MainCtrl">
-  <div class="row">
-    <div class="col">{{title}}</div>
-    <div ng-click="start()" class="a button">start</div>
-  </div>
+  <p>{{title}}</p>
+  <pre>{{data.beta | json}}</pre>
+  <pre>{{data.gamma | json}}</pre>
+  <canvas id="canvas"></canvas>
 </body>
